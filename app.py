@@ -92,7 +92,7 @@ with sidebar:
    page = st.radio("Ir para", ["Início", "Sobre", "Contato"])
   
    st.header("Pesquisar 🔍")
-  query = st.text_input("Buscar por título ou autor")
+   query = st.text_input("Buscar por título ou autor")
   
    st.markdown("---")
    st.write("Siga nas redes:")
