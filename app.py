@@ -28,7 +28,7 @@ PLACEHOLDER_AVATAR_URL = "https://via.placeholder.com/150?text=Avatar"
 POSTS = [
    {
        "id": 1,
-       "title": "Título do Seu Primeiro Post",
+       "title": "Tornados, Ciclones e Furacões",
        "author": "Nome do Autor 1",
        "date": "2025-11-01",
        "summary": "Um resumo cativante sobre o conteúdo do post para atrair o leitor. Descreva o tópico principal.",
