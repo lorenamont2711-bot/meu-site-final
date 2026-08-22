@@ -29,9 +29,9 @@ POSTS = [
    {
        "id": 1,
        "title": "Tornados, Ciclones e Furacões",
-       "author": "Nome do Autor 1",
+       "author": ""Lorena Monteiro Moreira
        "date": "2025-11-01",
-       "summary": "Um resumo cativante sobre o conteúdo do post para atrair o leitor. Descreva o tópico principal.",
+       "summary": "saiba a diferença entre cada um e como são formados.",
        "image": PLACEHOLDER_IMAGE_URL_1,
    },
    {
