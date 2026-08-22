@@ -29,7 +29,7 @@ POSTS = [
    {
        "id": 1,
        "title": "Tornados, Ciclones e Furacões",
-       "author": ""Lorena Monteiro Moreira
+       "author": "Lorena Monteiro Moreira"
        "date": "2025-11-01",
        "summary": "saiba a diferença entre cada um e como são formados.",
        "image": PLACEHOLDER_IMAGE_URL_1,
