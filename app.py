@@ -146,7 +146,7 @@ with main:
                    # Mensagem para o caso do Firestore não ter sido conectado
                    st.error("O formulário foi preenchido, mas a conexão com o banco de dados (Firestore) falhou. Verifique 'firebase.json'.")
                   
-               else:
+              else:
                    # Lógica de salvamento no Firestore (Manter se for usar)
                    try:
                        novo_documento = db.collection("contato_mensagem").document() # Usa ID gerado automaticamente
