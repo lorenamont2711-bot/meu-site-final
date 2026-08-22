@@ -134,15 +134,15 @@ with main:
    elif page == "Contato":
        with st.form("fale_conosco"):
            st.header("Fale Conosco 📧")
-          st.write("Preencha o formulário abaixo para entrar em contato.")
+           st.write("Preencha o formulário abaixo para entrar em contato.")
            name = st.text_input("Seu nome")
            email = st.text_input("Seu e-mail")
            message = st.text_area("Mensagem")
           
-           if st.form_submit_button("Enviar"):
-               if not name or not email or not message:
-                   st.warning("Preencha todos os campos antes de enviar.")
-               elif db is None:
+           if st.form_submit_button("Enviar"):  
+              if not name or not email or not message:
+                  st.warning("Preencha todos os campos antes de enviar.")
+              elif db is None:
                    # Mensagem para o caso do Firestore não ter sido conectado
                    st.error("O formulário foi preenchido, mas a conexão com o banco de dados (Firestore) falhou. Verifique 'firebase.json'.")
                   
