@@ -32,7 +32,7 @@ POSTS = [
        "author": "Lorena Monteiro Moreira",
        "date": "2025-11-01",
        "summary": "saiba a diferença entre cada um e como são formados.",
-       "image": PLACEHOLDER_IMAGE_URL_1,
+       "image": PLACEHOLDER_IMAGE_URL_1
    },
    {
        "id": 2,
@@ -53,7 +53,9 @@ def render_post_card(post):
    st.markdown(f"### {post['title']}")
    st.markdown(f"por *{post['author']}* — {post['date']}")
    st.write(post["summary"])
-   st.markdown("[*Leia mais*](#)") # Link placeholder
+      if st.button("Leia mais", key=f"btn_{post['title']}"):
+        st.query_parameters["post"] = post['title']
+        st.rerun()
 
 
 # --- Layout e Interatividade ---
@@ -102,7 +104,22 @@ with sidebar:
 
 with main:
    if page == "Início":
+      
        st.header("Posts Recentes ✨")
+      if "post" in st.query_parameters:
+        titulo_selecionado = st.query_parameters["post"]
+        
+        # Chama o seu outro arquivo para mostrar o texto completo
+        from pagina_post import mostrar_post_completo
+        mostrar_post_completo(titulo_selecionado) 
+        
+    else:
+        # Se NÃO clicou em nada, roda o código original que mostra a lista de cards
+        st.title("Posts Recentes ✨")
+        
+        # Aqui deve estar o seu loop atual que mostra os posts, por exemplo:
+        for post in lista_de_posts:
+            render_post_card(post)
 
 
        # Filtro de pesquisa simples
