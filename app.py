@@ -103,7 +103,7 @@ with sidebar:
 
 
 with main:
-   if page == "Início":
+   if page = "Início":
       
        st.header("Posts Recentes ✨")
    if "post" in st.query_parameters:
