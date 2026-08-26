@@ -138,7 +138,7 @@ with main:
             st.info("Nenhum post encontrado com o critério de pesquisa.")
 
 
-   elif page == "Sobre":
+       elif page == "Sobre":
        st.header("Sobre Este Blog 💡")
        st.markdown(
            "Este blog serve como um *template* e um espaço para o autor compartilhar "
@@ -148,7 +148,7 @@ with main:
        st.write("Compartilhar conteúdo de forma clara, acessível e inspiradora.")
 
 
-   elif page == "Contato":
+       elif page == "Contato":
        with st.form("fale_conosco"):
            st.header("Fale Conosco 📧")
            st.write("Preencha o formulário abaixo para entrar em contato.")
