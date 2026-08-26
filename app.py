@@ -53,7 +53,7 @@ def render_post_card(post):
    st.markdown(f"### {post['title']}")
    st.markdown(f"por *{post['author']}* — {post['date']}")
    st.write(post["summary"])
-      if st.button("Leia mais", key=f"btn_{post['title']}"):
+if st.button("Leia mais", key=f"btn_{post['title']}"):
         st.query_parameters["post"] = post['title']
         st.rerun()
 
