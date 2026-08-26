@@ -106,7 +106,7 @@ with main:
    if page == "Início":
       
        st.header("Posts Recentes ✨")
-      if "post" in st.query_parameters:
+   if "post" in st.query_parameters:
         titulo_selecionado = st.query_parameters["post"]
         
         # Chama o seu outro arquivo para mostrar o texto completo
