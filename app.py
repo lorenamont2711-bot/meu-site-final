@@ -123,14 +123,14 @@ with main:
 
 
        # Filtro de pesquisa simples
-       filtered = POSTS
-       if query:
+           filtered = POSTS
+           if query:
            q = query.lower()
            filtered = [p for p in POSTS if q in p['title'].lower() or q in p['author'].lower()]
 
 
-       if filtered:
-           for post in filtered:
+           if filtered:
+            for post in filtered:
                with st.container():
                    render_post_card(post)
                    st.markdown("---")
