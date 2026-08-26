@@ -134,7 +134,7 @@ with main:
                with st.container():
                    render_post_card(post)
                    st.markdown("---")
-       else:
+        else:
             st.info("Nenhum post encontrado com o critério de pesquisa.")
 
 
